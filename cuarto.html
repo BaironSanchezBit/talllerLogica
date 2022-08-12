@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuarto Punto</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+<body class="d-flex justify-content-center align-items-center flex-column" style="padding: 10% 0;">
+    <p class="h1">CARNES</p>
+    <ul class="list-group m-3">
+        <li class="list-group-item">
+            <input onclick="agregar()" class="form-check-input me-1" type="checkbox" value="10000" id="lomoCerdo">
+            <label class="form-check-label" for="firstCheckbox">Lomo de Cerdo <b>$10.000</b></label>
+        </li>
+        <li class="list-group-item">
+            <input onchange="agregar()" class="form-check-input me-1" type="checkbox" value="9000" id="polloSalsa">
+            <label class="form-check-label" for="secondCheckbox">Pollo en Salsa <b>$9.000</b></label>
+        </li>
+        <li class="list-group-item">
+            <input onchange="agregar()" class="form-check-input me-1" type="checkbox" value="12000" id="costillaB">
+            <label class="form-check-label" for="thirdCheckbox">Costillas BBQ <b>$12.000</b></label>
+        </li>
+    </ul>
+    <p class="h1">JUGOS</p>
+    <ul class="list-group m-3">
+        <li class="list-group-item">
+            <input onchange="agregar()" class="form-check-input me-1" type="checkbox" value="5000" id="maracuya">
+            <label class="form-check-label" for="firstCheckbox">Maracuyá en leche<b>$5.000</b></label>
+        </li>
+        <li class="list-group-item">
+            <input onchange="agregar()" class="form-check-input me-1" type="checkbox" value="3000" id="mora">
+            <label class="form-check-label" for="secondCheckbox">Mora en agua<b>$3.000</b></label>
+        </li>
+        <li class="list-group-item">
+            <input onchange="agregar()" class="form-check-input me-1" type="checkbox" value="2000" id="limonada">
+            <label class="form-check-label" for="thirdCheckbox">Limonada<b>$12.000</b></label>
+        </li>
+    </ul>
+    <p class="h1">POSTRES</p>
+    <ul class="list-group m-3">
+        <li class="list-group-item">
+            <input onchange="agregar()" class="form-check-input me-1" type="checkbox" value="1500" id="ensalada">
+            <label class="form-check-label" for="firstCheckbox">Ensalada <b>$1.500</b></label>
+        </li>
+        <li class="list-group-item">
+            <input onchange="agregar()" class="form-check-input me-1" type="checkbox" value="3000" id="gelatina">
+            <label class="form-check-label" for="secondCheckbox">Gelatina<b>$9.000</b></label>
+        </li>
+        <li class="list-group-item">
+            <input onchange="agregar()" class="form-check-input me-1" type="checkbox" value="4000" id="donas">
+            <label class="form-check-label" for="thirdCheckbox">Donas<b>$12.000</b></label>
+        </li>
+    </ul>
+
+
+
+    <button type="button" onclick="resumen_carrito()" class="btn btn-success position-relative px-5 py-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        PAGAR 
+    </button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
